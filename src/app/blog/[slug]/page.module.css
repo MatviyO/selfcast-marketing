@@ -1,0 +1,263 @@
+.blogPost {
+    background: #fff;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.hero {
+    background: linear-gradient(to bottom, #e00, #cc0000);
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.metadata {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category, .readTime {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.excerpt {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.authorInfo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.author, .date, .category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author svg, .date svg, .category svg {
+    font-size: 1rem;
+}
+
+.featuredImage {
+    margin: -4rem auto 3rem;
+    max-width: var(--container-max-width);
+    padding: 0 var(--container-padding);
+    position: relative;
+}
+
+.featuredImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3rem 0 1.5rem;
+    color: #222129;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.content ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.75rem;
+}
+
+.content blockquote {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: #f8f8f9;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #222129;
+    position: relative;
+}
+
+.content blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    font-size: 5rem;
+    color: #e00;
+    opacity: 0.1;
+    font-family: serif;
+}
+
+.content blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    font-style: normal;
+}
+
+.share {
+    border-top: 1px solid #eee;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.shareLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #222129;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialLinks a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f9;
+    border-radius: 50%;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+    background: #e00;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.navigation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.backLink:hover {
+    color: #e00;
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .featuredImage {
+        margin-top: -3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .excerpt {
+        font-size: 1.125rem;
+    }
+
+    .authorInfo {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .featuredImage {
+        margin-top: -2rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .content h2 {
+        font-size: 1.75rem;
+    }
+
+    .content blockquote {
+        font-size: 1.125rem;
+        padding: 1.5rem;
+    }
+
+    .share {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .metadata {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .category, .readTime {
+        display: inline-block;
+    }
+} 

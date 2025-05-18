@@ -157,7 +157,8 @@
 
     /* Contact button mobile styles */
     .contactButton {
-        padding: 0.75rem 1.5rem;
+        padding: 0.5rem 0.75rem;
         font-size: 1rem;
+        text-align: center;
     }
 }

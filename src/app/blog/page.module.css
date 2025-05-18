@@ -1,0 +1,233 @@
+.blogPage {
+  padding: var(--spacing-2xl) 0;
+  background: #fff;
+  color: #222129;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #222129;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.searchSection {
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+}
+
+.searchBar {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #eee;
+  border-radius: var(--radius-full);
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #e00;
+  box-shadow: 0 0 0 3px rgba(238, 0, 0, 0.1);
+}
+
+.filterTags {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  background: #f8f8f9;
+  color: #666;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.tag:hover {
+  background: #e00;
+  color: white;
+}
+
+.tag.active {
+  background: #e00;
+  color: white;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.blogCard {
+  background: #f8f8f9;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardAppear 0.8s ease-out forwards;
+}
+
+.blogCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.blogImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blogContent {
+  padding: 2rem;
+}
+
+.blogMeta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.blogContent h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222129;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.blogExcerpt {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  color: #e00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.readMore:hover {
+  transform: translateX(8px);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+
+.pageButton {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #f8f8f9;
+  color: #666;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pageButton:hover,
+.pageButton.active {
+  background: #e00;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .searchBar {
+    flex-direction: column;
+  }
+
+  .blogContent {
+    padding: 1.5rem;
+  }
+} 

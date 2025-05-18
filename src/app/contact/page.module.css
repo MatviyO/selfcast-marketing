@@ -1,0 +1,245 @@
+.contactPage {
+  padding: 4rem 0;
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(135deg, #f8f8f9 0%, #fff 100%);
+}
+
+.contactHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.contactHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222129;
+  margin-bottom: 1rem;
+}
+
+.contactHeader p {
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.contactInfo {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.contactInfo h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222129;
+  margin-bottom: 1rem;
+}
+
+.contactInfo > p {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #e00;
+  flex-shrink: 0;
+}
+
+.contactItem h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #222129;
+  margin-bottom: 0.5rem;
+}
+
+.contactItem p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.contactLink {
+  color: #e00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #ff0000;
+}
+
+.socialLinks {
+  margin-top: 2.5rem;
+}
+
+.socialLinks h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222129;
+  margin-bottom: 1rem;
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem;
+  background: white;
+  border-radius: 0.5rem;
+  color: #222129;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.socialLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #e00;
+}
+
+.mapSection {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.mapSection h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222129;
+  margin-bottom: 1.5rem;
+}
+
+.mapContainer {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 700px;
+  }
+
+  .contactInfo {
+    text-align: center;
+  }
+
+  .contactDetails {
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .socialGrid {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactPage {
+    padding: 3rem 0;
+  }
+
+  .contactHeader h1 {
+    font-size: 2rem;
+  }
+
+  .contactItem {
+    padding: 1.25rem;
+  }
+
+  .mapContainer {
+    height: 350px;
+  }
+
+  .mapContainer iframe {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactHeader h1 {
+    font-size: 1.75rem;
+  }
+
+  .contactInfo h2,
+  .mapSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+} 

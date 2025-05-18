@@ -1,0 +1,220 @@
+.supportContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.heroSection {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-radius: 1rem;
+  color: white;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heroSection h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ffffff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcomeText {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.mainContent {
+  display: grid;
+  gap: 3rem;
+}
+
+.introSection {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introSection h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.introSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.faqSection {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.faqCard {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.faqCard:hover {
+  transform: translateY(-5px);
+}
+
+.faqIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.faqCard h3 {
+  color: #2d3748;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.faqAccordion {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.faqItem {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.faqItem summary {
+  padding: 1rem;
+  cursor: pointer;
+  background: #f8fafc;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: #4a5568;
+}
+
+.faqItem[open] summary::after {
+  content: '-';
+}
+
+.faqContent {
+  padding: 1rem;
+  background: white;
+}
+
+.faqContent ul,
+.faqContent ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.faqContent li {
+  margin: 0.5rem 0;
+  color: #4a5568;
+}
+
+.contactSection {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contactCard {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.2);
+}
+
+.contactButton {
+  display: inline-block;
+  background: white;
+  color: #4f46e5;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.contactButton:hover {
+  transform: scale(1.05);
+}
+
+.feedbackSection {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+}
+
+.feedbackSection h2 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.feedbackSection p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .supportContainer {
+    padding: 1rem;
+  }
+
+  .heroSection {
+    padding: 2rem 1rem;
+  }
+
+  .heroSection h1 {
+    font-size: 2.5rem;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    margin: 2rem 1rem;
+  }
+} 

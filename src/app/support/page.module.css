@@ -1,0 +1,170 @@
+.supportPage {
+  padding: var(--spacing-2xl) 0;
+  background: #fff;
+  color: #222129;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222129;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionAppear 0.8s ease-out forwards;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222129;
+}
+
+.section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.faqCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(160, 158, 189, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faqCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(238, 0, 0, 0.05);
+  border-color: rgba(238, 0, 0, 0.1);
+}
+
+.faqCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e00;
+  margin-bottom: 1rem;
+}
+
+.faqCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqCard li {
+  margin-bottom: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.faqCard li:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(238, 0, 0, 0.03) 0%, rgba(34, 33, 41, 0.02) 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.contact h2 {
+  color: #222129;
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #e00;
+  color: white;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 0, 0, 0.2);
+}
+
+@keyframes sectionAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.75rem;
+  }
+
+  .faqCard {
+    padding: 1.5rem;
+  }
+
+  .contact {
+    padding: 2rem 1.5rem;
+  }
+} 
