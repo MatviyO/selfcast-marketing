@@ -1,0 +1,217 @@
+.aboutPage {
+  padding: var(--spacing-2xl) 0;
+  background: #fff;
+  color: #222129;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222129;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionAppear 0.8s ease-out forwards;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222129;
+}
+
+.section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.teamCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(160, 158, 189, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardAppear 0.8s ease-out forwards;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(238, 0, 0, 0.05);
+  border-color: rgba(238, 0, 0, 0.1);
+}
+
+.teamCardContent {
+  padding: 1.5rem;
+}
+
+.teamCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222129;
+  margin-bottom: 0.5rem;
+}
+
+.teamCard h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e00;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.teamCard p {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.teamContact {
+  color: #666;
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.teamContact:hover {
+  color: #e00;
+}
+
+.companyInfo {
+  background: linear-gradient(135deg, rgba(238, 0, 0, 0.03) 0%, rgba(34, 33, 41, 0.02) 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.companyInfo h2 {
+  color: #222129;
+  margin-bottom: 2rem;
+}
+
+.companyInfo p {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contactInfo a {
+  color: #e00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+  color: #222129;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sectionAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.75rem;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 2rem auto 0;
+  }
+
+  .companyInfo {
+    padding: 2rem 1.5rem;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}

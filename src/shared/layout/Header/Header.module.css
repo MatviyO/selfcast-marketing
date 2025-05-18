@@ -1,0 +1,163 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(34, 33, 41, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Inner container */
+.inner {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 1.25rem var(--container-padding);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Checkbox hack for mobile menu */
+.toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Burger icon */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Horizontal menu (desktop) */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0.75rem 0;
+    transition: color 0.3s ease;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #e00;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+}
+
+.navLink:hover {
+    color: #e00;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+/* Contact button */
+.contactButton {
+    background: #e00;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.contactButton:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(238, 0, 0, 0.25);
+}
+
+/* Adaptive: ≤768px */
+@media (max-width: 768px) {
+    .inner {
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    /* Hide desktop menu */
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(34, 33, 41, 1);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        padding: 1rem 0;
+    }
+
+    /* Show burger */
+    .burger {
+        display: flex;
+        order: 3;
+    }
+
+    /* When checkbox is checked - open menu */
+    .toggle:checked + .burger + .nav {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+
+    /* Burger animation to X */
+    .toggle:checked + .burger span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .toggle:checked + .burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle:checked + .burger span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Link styles */
+    .navLink {
+        font-size: 1.25rem;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Contact button mobile styles */
+    .contactButton {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
