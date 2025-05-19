@@ -19,7 +19,6 @@ export default function Header() {
                     <Image src="/logo.svg" alt="Selfcast" width={120} height={24} />
                 </Link>
 
-                {/* Цей чекбокс керує відкриттям/закриттям меню */}
                 <input
                     type="checkbox"
                     id="menuToggle"
@@ -29,14 +28,12 @@ export default function Header() {
                     aria-hidden="true"
                 />
 
-                {/* Мітка-бургер */}
                 <label htmlFor="menuToggle" className={styles.burger}>
                     <span />
                     <span />
                     <span />
                 </label>
 
-                {/* Навігація */}
                 <nav className={styles.nav}>
                     {[
                         ['Producers', '/producers'],
