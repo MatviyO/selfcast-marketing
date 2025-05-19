@@ -23,7 +23,7 @@ export default function TermsOfUsePage() {
                 <section className={styles.section}>
                     <h2>1. Introduction</h2>
                     <p>
-                        1.1 These terms of use (together with the documents referred to in them) (the "Terms of Use") are the terms on which you may make use of our website www.selfcast.com, our mobile application ("App") (collectively named "The Site", "The Website" or "Selfcast") and the related services (the "Services"). Our Services are provided to you by Selfcast ApS, Company no. 39603535 (referred to as "the Company", "Selfcast" or "We"), Store Kongensgade 25, 1264 Copenhagen K, Denmark.
+                        1.1 These terms of use (together with the documents referred to in them) (the Terms of Use) are the terms on which you may make use of our website www.selfcast.com, our mobile application (App) (collectively named The Site, The Website or Selfcast) and the related services (the Services). Our Services are provided to you by Selfcast ApS, Company no. 39603535 (referred to as the Company, Selfcast or We), Store Kongensgade 25, 1264 Copenhagen K, Denmark.
                     </p>
                     <p>
                         1.2 Please read these Terms of Use carefully before you start to use our Services. You may want to print a copy of these Terms of Use for future reference but remember to check back occasionally just in case we have updated them as we reserve the right to update these Terms of Use in accordance with paragraph 11.5.
@@ -47,7 +47,7 @@ export default function TermsOfUsePage() {
                     <h2>3. Site and Services</h2>
                     <h3>3.1 What our Site does</h3>
                     <p>
-                        The purpose of our Services (the "Purpose") is to provide a networking platform to connect Talents (actors, models, extras and the like) with Employers (Agents, Advertising Agencies, TV-stations, film companies and the like) who are searching for Talents to participate in ads, commercials, TV shows, feature films and the like.
+                        The purpose of our Services (the &quot;Purpose&quot;) is to provide a networking platform to connect Talents (actors, models, extras and the like) with Employers (Agents, Advertising Agencies, TV-stations, film companies and the like) who are searching for Talents to participate in ads, commercials, TV shows, feature films and the like.
                     </p>
                     <p>
                         Our Site offers many features, hereunder but not limited to, a comprehensive Talent Profile section that you must maintain yourself, including a feature to cast yourself with a mobile device (known as selfcast). You can search for jobs or have jobs offered and you can communicate with the Employers about job details, terms, salary and the like and finally the parties can sign a legally binding digital contract in case you accept the terms.
@@ -55,7 +55,7 @@ export default function TermsOfUsePage() {
 
                     <h3>3.2 Our Services</h3>
                     <p>
-                        Our Services include use of our site (including accessing, browsing, or registering to use our site) and all email notifications, applications, widgets, information, text, graphics, and material uploaded to our site by us from time to time (the "Selfcast Content"). We may update our site from time to time including to require our users to pay a fee for the use of our Services (a "Subscription"), and may change, suspend or discontinue the Services provided at any time without notice.
+                        Our Services include use of our site (including accessing, browsing, or registering to use our site) and all email notifications, applications, widgets, information, text, graphics, and material uploaded to our site by us from time to time (the &quot;Selfcast Content&quot;). We may update our site from time to time including to require our users to pay a fee for the use of our Services (a &quot;Subscription&quot;), and may change, suspend or discontinue the Services provided at any time without notice.
                     </p>
                 </section>
 
@@ -93,7 +93,7 @@ export default function TermsOfUsePage() {
                     <h2>6. Use of Our Site</h2>
                     <h3>6.1 Your Use of Our Site</h3>
                     <p>
-                        We respect yours and other users' rights and in turn, we expect you to do the same. In using our Services, you may:
+                        We respect yours and other users&apos; rights and in turn, we expect you to do the same. In using our Services, you may:
                     </p>
                     <ul>
                         <li>Carry out actions and activities pursuant to your use of our Services for the Purpose of building and maintaining a user profile, search and receive job offers, communicate and interact with other users, sign digital contracts between Talents and Employers and benefit from other features offered by us.</li>
@@ -101,7 +101,7 @@ export default function TermsOfUsePage() {
                     <p>You will not use our site:</p>
                     <ul>
                         <li>For commercial purposes, unless we have expressly permitted such use in writing</li>
-                        <li>To upload or send publically, or privately transmit, User Content that is unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libelous, invasive of another's privacy, hateful, or racially, ethnically or otherwise objectionable</li>
+                        <li>To upload or send publically, or privately transmit, User Content that is unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libelous, invasive of another&apos;s privacy, hateful, or racially, ethnically or otherwise objectionable</li>
                         <li>To harm or exploit minors in any way</li>
                         <li>To impersonate any person or entity, including a Selfcast director, administrator or employee</li>
                         <li>To falsely state or otherwise misrepresent your affiliation with a person or entity</li>
@@ -112,7 +112,7 @@ export default function TermsOfUsePage() {
                         <li>To upload, post, email or otherwise transmit any material that contains malicious software</li>
                         <li>To interfere with or disrupt the Services or connected networks</li>
                         <li>To violate any applicable law</li>
-                        <li>To "stalk" another</li>
+                        <li>To &quot;stalk&quot; another</li>
                         <li>To extract, collect, process, combine or store personal data about other users</li>
                     </ul>
 
@@ -164,7 +164,7 @@ export default function TermsOfUsePage() {
                     <ul>
                         <li>The profile is accurate, up to date, and only contains appropriate content</li>
                         <li>All communication and job applications are reviewed and approved</li>
-                        <li>The child's participation complies with applicable child labor laws</li>
+                        <li>The child&apos;s participation complies with applicable child labor laws</li>
                         <li>Any earnings or contracts are properly managed</li>
                     </ul>
 
@@ -213,7 +213,7 @@ export default function TermsOfUsePage() {
                         10.1 We reserve the right to change, suspend or discontinue the Services at any time without notice.
                     </p>
                     <p>
-                        10.2 Your account may be terminated by Selfcast upon fourteen (14) days' notice for any reason; or immediately if you breach these Terms of Use.
+                        10.2 Your account may be terminated by Selfcast upon fourteen (14) days&apos; notice for any reason; or immediately if you breach these Terms of Use.
                     </p>
                     <p>
                         10.3 You may disable or delete your account at any time. See our Privacy Policy for details about data retention.
@@ -229,7 +229,7 @@ export default function TermsOfUsePage() {
                         11.2 These Terms of Use shall be governed by the laws of Denmark. Any disputes must be resolved by the courts of Copenhagen.
                     </p>
                     <p>
-                        11.3 If we don't enforce any particular provision, we are not waiving our right to do so later.
+                        11.3 If we don&apos;t enforce any particular provision, we are not waiving our right to do so later.
                     </p>
                     <p>
                         11.4 Your notices to us must be sent by email to:{' '}

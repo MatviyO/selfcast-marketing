@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-import Link from 'next/link'
 import { FaUserAlt, FaBriefcase, FaVideo } from 'react-icons/fa'
 import Image from "next/image";
 
@@ -44,13 +43,13 @@ export default function TalentsPage() {
             Selfcast is the #1 casting app for actors, models, dancers, extras, and everyone who wants to appear in films, TV, and commercials.
           </p>
           <p>
-            Whether you're a professional or a beginner, Selfcast will make you stand out and look amazing to Producers.
+            Whether you&apos;re a professional or a beginner, Selfcast will make you stand out and look amazing to Producers.
           </p>
           <p>
             Best of all, there is no requirement of experience. You can cast yourself, create a profile and receive job offers. Among other great features, you can communicate directly with Producers, when they want to book you for exciting jobs.
           </p>
           <p>
-            When using Selfcast you don't need an expensive agency to manage your career. You can just do it yourself.
+            When using Selfcast you don&apos;t need an expensive agency to manage your career. You can just do it yourself.
           </p>
         </section>
 
@@ -61,13 +60,13 @@ export default function TalentsPage() {
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>1</div>
               <h3>Download the App</h3>
-              <p>Download the Selfcast App from your device's app store</p>
+              <p>Download the Selfcast App from your devices app store</p>
             </div>
 
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>2</div>
               <h3>Create Your Profile</h3>
-              <p>Click "New here? Sign Up" and create your own profile</p>
+              <p>Click &quot;New here? Sign Up&quot; and create your own profile</p>
             </div>
 
             <div className={styles.stepCard}>
@@ -95,7 +94,7 @@ export default function TalentsPage() {
                 <FaUserAlt />
               </div>
               <h3>Build your own career</h3>
-              <p>Manage your career - you don't need an agency</p>
+              <p>Manage your career - you dont need an agency</p>
             </div>
 
             <div className={styles.featureCard}>

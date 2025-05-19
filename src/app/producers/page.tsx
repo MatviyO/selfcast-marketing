@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-import Link from 'next/link'
 import { FaClock, FaComments, FaMoneyBillWave, FaTasks } from 'react-icons/fa'
 
 export const metadata = {
@@ -65,7 +64,7 @@ export default function ProducersPage() {
               <div className={styles.benefitIcon}>
                 <FaMoneyBillWave />
               </div>
-              <h3>It's free</h3>
+              <h3>It&apos;s free</h3>
               <p>Professionals can use Selfcast for free - and save even more on casting days</p>
             </div>
 

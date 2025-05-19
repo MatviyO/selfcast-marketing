@@ -9,7 +9,7 @@ export default function SupportPage() {
         <div className={styles.hero}>
           <h1>Welcome to Our Support Page</h1>
           <p>
-            Welcome to Selfcast's support page! We're here to assist you with any questions, concerns, or issues you may have regarding our products or services. Whether you're a new customer exploring our offerings or a long-time user seeking assistance, you've come to the right place.
+            Welcome to Selfcast&apos;s support page! We&apos;re here to assist you with any questions, concerns, or issues you may have regarding our products or services. Whether you&apos;re a new customer exploring our offerings or a long-time user seeking assistance, you&apos;ve come to the right place.
           </p>
         </div>
 
@@ -17,7 +17,7 @@ export default function SupportPage() {
         <section className={styles.section}>
           <h2>How Can We Help You?</h2>
           <p>
-            Below, you'll find resources to help you get the most out of your experience with Selfcast. From frequently asked questions to troubleshooting guides, we've curated a collection of helpful information to address common queries and concerns. If you can't find what you're looking for or need further assistance, don't hesitate to reach out to our dedicated support team.
+            Below, you&apos;ll find resources to help you get the most out of your experience with Selfcast. From frequently asked questions to troubleshooting guides, we&apos;ve curated a collection of helpful information to address common queries and concerns. If you can&apos;t find what you&apos;re looking for or need further assistance, don&apos;t hesitate to reach out to our dedicated support team.
           </p>
         </section>
 
@@ -29,7 +29,7 @@ export default function SupportPage() {
               <h3>Login & Account Issues</h3>
               <ul>
                 <li>
-                  <strong>Login problems:</strong> First, ensure you're using the latest app version and correct email. Try password reset if needed.
+                  <strong>Login problems:</strong> First, ensure you&apos;re using the latest app version and correct email. Try password reset if needed.
                 </li>
                 <li>
                   <strong>How to subscribe:</strong> Go to Settings → Subscription → Select plan → Complete purchase.
@@ -89,7 +89,7 @@ export default function SupportPage() {
               <h3>Professional Actors</h3>
               <ul>
                 <li>
-                  <strong>Professional status:</strong> Choose "professional actor" under "talent type" and provide credentials.
+                  <strong>Professional status:</strong> Choose professional actor under talent type and provide credentials.
                 </li>
                 <li>
                   <strong>Agent representation:</strong> You can use the app with an agent by adding their contact information.
@@ -106,7 +106,7 @@ export default function SupportPage() {
         <section className={styles.contact}>
           <h2>Need More Help?</h2>
           <p>
-            If you didn't find the help you were looking for, our support team is here to assist you. We're committed to providing you with the best possible support experience.
+            If you didn&apos;t find the help you were looking for, our support team is here to assist you. We&apos;re committed to providing you with the best possible support experience.
           </p>
           <Link href="mailto:support@selfcast.com" className={styles.contactButton}>
             Contact Support
@@ -117,10 +117,10 @@ export default function SupportPage() {
         <section className={styles.section}>
           <h2>Your Feedback Matters</h2>
           <p>
-            We're constantly striving to improve our support services to better meet your needs. If you have any feedback or suggestions on how we can enhance your experience, please don't hesitate to let us know. Your input is invaluable to us as we continue to refine and optimize our support resources.
+            We&apos;re constantly striving to improve our support services to better meet your needs. If you have any feedback or suggestions on how we can enhance your experience, please don&apos;t hesitate to let us know. Your input is invaluable to us as we continue to refine and optimize our support resources.
           </p>
           <p>
-            Thank you for choosing Selfcast. We're committed to providing you with the best possible support experience and ensuring your satisfaction with our products and services.
+            Thank you for choosing Selfcast. We&apos;re committed to providing you with the best possible support experience and ensuring your satisfaction with our products and services.
           </p>
         </section>
       </div>

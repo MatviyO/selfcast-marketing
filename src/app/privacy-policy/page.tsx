@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-import Link from 'next/link'
 
 export const metadata = {
     title: 'Privacy Policy – Selfcast',
@@ -23,7 +22,7 @@ export default function PrivacyPolicyPage() {
                 <section className={styles.section}>
                     <h2>1. Introduction</h2>
                     <p>
-                        Selfcast ("We") are committed to protecting your personal information.
+                        Selfcast (We) are committed to protecting your personal information.
                     </p>
                     <p>
                         This policy (together with our Terms of Use and any other documents referred to in it) sets out the basis on which any personal data we collect from you, or that you provide to us in connection with your use of our site, will be processed by us. It is important that you read the following carefully to understand our views and practices regarding your personal data and how we will treat it.
@@ -70,7 +69,7 @@ export default function PrivacyPolicyPage() {
                         We also receive other types of information about you:
                     </p>
                     <ul>
-                        <li>We receive data about you when you interact with our site, such as when you log-in, look at another user's wishes, send or receive a message or use the app.</li>
+                        <li>We receive data about you when you interact with our site, such as when you log-in, look at another user&apos;s wishes, send or receive a message or use the app.</li>
                         <li>When you post things like photos and videos, we may receive additional related data (or metadata), such as the time, data, and place you took the photo.</li>
                         <li>We receive data from the computer, mobile phone or other devices you use to access our site including when multiple users log in from the same device. This may include your IP address and other information about things such as your internet service provider, location, the type (including identifiers) of the browser you use, or the pages you visit.</li>
                         <li>If you contact us, we may keep a record of that correspondence.</li>

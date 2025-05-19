@@ -12,7 +12,7 @@ export default function Contact() {
       <div className={styles.contactContent}>
         <div className={styles.contactInfo}>
           <h2>Get in Touch</h2>
-          <p>We'd love to hear from you. Please use our contact information below or send us an email.</p>
+          <p>We&apos;d love to hear from you. Please use our contact information below or send us an email.</p>
 
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>

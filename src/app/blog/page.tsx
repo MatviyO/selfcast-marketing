@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-import { FaSearch } from 'react-icons/fa'
 
 // Blog post data
 const blogPosts = [

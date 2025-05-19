@@ -85,8 +85,8 @@ export default function Home() {
           <h2>Caring is the new marketing</h2>
           <p>
             The Selfcast blog is the best place to read about the latest casting insights,
-            trends and more. See who's joining the community, read about how our community
-            are increasing their casting success and lot's more.
+            trends and more. See who&apos;s joining the community, read about how our community
+            are increasing their casting success and lot&apos;s more.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
               ))}
             </div>
             <p className={styles.testimonialText}>
-              "I feel very secure when using your services. Your customer care team is very enthusiastic and the driver is always on time."
+              I feel very secure when using your services. Your customer care team is very enthusiastic and the driver is always on time.
             </p>
             <div className={styles.testimonialAuthor}>
               <div className={styles.authorImage}>
@@ -217,7 +217,7 @@ export default function Home() {
               ))}
             </div>
             <p className={styles.testimonialText}>
-              "The platform is incredibly user-friendly and has helped me land several great roles. The team is always responsive and helpful."
+              The platform is incredibly user-friendly and has helped me land several great roles. The team is always responsive and helpful.
             </p>
             <div className={styles.testimonialAuthor}>
               <div className={styles.authorImage}>
@@ -244,7 +244,7 @@ export default function Home() {
               ))}
             </div>
             <p className={styles.testimonialText}>
-              "As a producer, finding the right talent has never been easier. The filtering system and profile verification make the process seamless."
+              As a producer, finding the right talent has never been easier. The filtering system and profile verification make the process seamless.
             </p>
             <div className={styles.testimonialAuthor}>
               <div className={styles.authorImage}>
