@@ -1,4 +1,3 @@
-// app/page.tsx
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
@@ -19,10 +18,11 @@ export default function Home() {
                 <button className={styles.primary}>For Producers</button>
               </Link>
             </div>
+            <h5 className={styles.description}>Download the app today</h5>
             <div className={styles.appStoreButtons}>
-              <a href="https://apps.apple.com/app/selfcast" target="_blank" rel="noopener noreferrer">
+              <a className={styles.apple} href="https://apps.apple.com/us/app/selfcast/id1467179570?ignmpt=uo%3D4" target="_blank" rel="noopener noreferrer">
                 <Image
-                    src="/apple.png"
+                    src="/apple.svg"
                     alt="Download on the App Store"
                     width={140}
                     height={42}
@@ -30,7 +30,7 @@ export default function Home() {
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.selfcast" target="_blank" rel="noopener noreferrer">
                 <Image
-                    src="/google.png"
+                    src="/google.svg"
                     alt="Get it on Google Play"
                     width={140}
                     height={42}
@@ -57,7 +57,7 @@ export default function Home() {
             <div className={styles.statIcon}>
               <FaCloudDownloadAlt />
             </div>
-            <div className={styles.statNumber}>+200M</div>
+            <div className={styles.statNumber}>+90K</div>
             <div className={styles.statLabel}>Downloads</div>
           </div>
 
@@ -65,16 +65,16 @@ export default function Home() {
             <div className={styles.statIcon}>
               <FaExchangeAlt />
             </div>
-            <div className={styles.statNumber}>+480M</div>
-            <div className={styles.statLabel}>Transactions</div>
+            <div className={styles.statNumber}>+20K</div>
+            <div className={styles.statLabel}>Castings</div>
           </div>
 
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               <FaStarIcon />
             </div>
-            <div className={styles.statNumber}>+180M</div>
-            <div className={styles.statLabel}>Ratings</div>
+            <div className={styles.statNumber}>+2K</div>
+            <div className={styles.statLabel}>Producers</div>
           </div>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function Home() {
         <div className={styles.blogGrid}>
           <article className={styles.blogCard}>
             <Image
-                src="/blog/streamlined-processes.jpg"
+                src="/pedroquintela.jpg"
                 alt="Person using laptop"
                 width={400}
                 height={200}
@@ -109,7 +109,7 @@ export default function Home() {
 
           <article className={styles.blogCard}>
             <Image
-                src="/blog/safeguarding.jpg"
+                src="/pedroquintela.jpg"
                 alt="Laptop with analytics"
                 width={400}
                 height={200}
@@ -125,7 +125,7 @@ export default function Home() {
 
           <article className={styles.blogCard}>
             <Image
-                src="/blog/membership-model.jpg"
+                src="/pedroquintela.jpg"
                 alt="Person working on laptop"
                 width={400}
                 height={200}
@@ -157,13 +157,13 @@ export default function Home() {
                 <li>Integrated messaging system</li>
                 <li>Performance analytics</li>
               </ul>
-              <Link href="/talent-management" className={styles.learnMore}>
+              <Link href="/talents" className={styles.learnMore}>
                 Learn More
               </Link>
             </div>
             <div className={styles.featureImage}>
               <Image
-                  src="/features/talent-management.jpg"
+                  src="/home/Baggrund.png"
                   alt="Talent Management System"
                   width={600}
                   height={450}
@@ -195,7 +195,7 @@ export default function Home() {
             <div className={styles.testimonialAuthor}>
               <div className={styles.authorImage}>
                 <Image
-                  src="/testimonials/charlie.jpg"
+                  src="/testimonials/mike.jpg"
                   alt="Charlie Johnson"
                   width={48}
                   height={48}
@@ -231,7 +231,7 @@ export default function Home() {
               </div>
               <div className={styles.authorInfo}>
                 <h4>Sarah Wilson</h4>
-                <p>From Los Angeles, US</p>
+                <p>From Copenhagen K, Denmark</p>
               </div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
               </div>
               <div className={styles.authorInfo}>
                 <h4>Michael Chen</h4>
-                <p>From Chicago, US</p>
+                <p>From Copenhagen K, Denmark</p>
               </div>
             </div>
           </div>
@@ -268,9 +268,9 @@ export default function Home() {
       <section className={styles.featureSection}>
         <div className={styles.container}>
           <div className={styles.featureContent}>
-            <div className={styles.featureImage}>
+            <div className={styles.featureImage1}>
               <Image
-                  src="/features/casting-platform.jpg"
+                  src="/home/phone.png"
                   alt="Modern Casting Platform"
                   width={600}
                   height={450}
@@ -291,7 +291,7 @@ export default function Home() {
                 <li>Digital portfolio management</li>
                 <li>Smart scheduling system</li>
               </ul>
-              <Link href="/features" className={styles.learnMore}>
+              <Link href="/talents" className={styles.learnMore}>
                 Explore Features
               </Link>
             </div>
@@ -307,12 +307,7 @@ export default function Home() {
             <p>We have been working with major production companies and studios worldwide</p>
           </div>
           <div className={styles.clientLogos}>
-            <Image src="/clients/client1.png" alt="Client Logo" width={120} height={60} />
-            <Image src="/clients/client2.png" alt="Client Logo" width={120} height={60} />
-            <Image src="/clients/client3.png" alt="Client Logo" width={120} height={60} />
-            <Image src="/clients/client4.png" alt="Client Logo" width={120} height={60} />
-            <Image src="/clients/client5.png" alt="Client Logo" width={120} height={60} />
-            <Image src="/clients/client6.png" alt="Client Logo" width={120} height={60} />
+            <Image width={1300} height={600} src="/home/partners.png" alt="Client Logo"/>
           </div>
         </div>
       </section>

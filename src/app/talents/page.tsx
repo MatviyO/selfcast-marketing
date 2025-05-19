@@ -1,6 +1,7 @@
 import styles from './page.module.css'
 import Link from 'next/link'
 import { FaUserAlt, FaBriefcase, FaVideo } from 'react-icons/fa'
+import Image from "next/image";
 
 export const metadata = {
   title: 'For Talents – Selfcast',
@@ -16,9 +17,24 @@ export default function TalentsPage() {
           <p>
             Create your profile and start looking for jobs in films, TV and commercials
           </p>
-          <Link href="#download" className={styles.downloadButton}>
-            Download Now
-          </Link>
+          <div className={styles.appStoreButtons}>
+            <a className={styles.apple} href="https://apps.apple.com/us/app/selfcast/id1467179570?ignmpt=uo%3D4" target="_blank" rel="noopener noreferrer">
+              <Image
+                  src="/apple.svg"
+                  alt="Download on the App Store"
+                  width={140}
+                  height={42}
+              />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.selfcast" target="_blank" rel="noopener noreferrer">
+              <Image
+                  src="/google.svg"
+                  alt="Get it on Google Play"
+                  width={140}
+                  height={42}
+              />
+            </a>
+          </div>
         </div>
 
         {/* What is Selfcast Section */}
@@ -98,9 +114,6 @@ export default function TalentsPage() {
           <p>
             Download the app today, create your profile, and start looking for jobs right away. See you on Selfcast!
           </p>
-          <Link href="#download" className={styles.downloadButton}>
-            Download Now
-          </Link>
         </section>
 
         {/* Disclaimer */}
@@ -111,4 +124,4 @@ export default function TalentsPage() {
       </div>
     </div>
   )
-} 
+}

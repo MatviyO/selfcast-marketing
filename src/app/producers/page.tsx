@@ -16,9 +16,6 @@ export default function ProducersPage() {
           <h2>BOOK YOUR TALENTS WITH SELFCAST FOR FREE!</h2>
           <p>A PLATFORM FOR CASTERS & PRODUCERS</p>
           <p>WE GOT ALL KINDS OF TALENTS IN 155 COUNTRIES</p>
-          <Link href="#contact" className={styles.contactButton}>
-            Contact us now
-          </Link>
         </div>
 
         {/* What is Selfcast Section */}
@@ -43,11 +40,6 @@ export default function ProducersPage() {
             Best regards<br />
             Selfcast – Casting made easy!
           </p>
-          <div className={styles.center}>
-            <Link href="#contact" className={styles.contactButton}>
-              Contact us now
-            </Link>
-          </div>
         </section>
 
         {/* Benefits Section */}
@@ -89,4 +81,4 @@ export default function ProducersPage() {
       </div>
     </div>
   )
-} 
+}
