@@ -12,7 +12,7 @@ const blogPosts = [
     id: 1,
     title: 'Creating Streamlined Safeguarding Processes with OneRen',
     excerpt: 'Learn how OneRen revolutionized their safeguarding processes using innovative solutions and best practices.',
-    image: '/blog/streamlined-processes.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Case Study',
     date: 'March 15, 2024',
     slug: 'streamlined-processes'
@@ -21,7 +21,7 @@ const blogPosts = [
     id: 2,
     title: 'What are your safeguarding responsibilities and how can you manage them?',
     excerpt: 'A comprehensive guide to understanding and managing safeguarding responsibilities in the entertainment industry.',
-    image: '/blog/safeguarding.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'March 12, 2024',
     slug: 'safeguarding-responsibilities'
@@ -30,7 +30,7 @@ const blogPosts = [
     id: 3,
     title: 'Revamping the Membership Model with Triathlon Australia',
     excerpt: 'Discover how Triathlon Australia transformed their membership model to better serve their community.',
-    image: '/blog/membership-model.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Case Study',
     date: 'March 10, 2024',
     slug: 'membership-model'
@@ -39,7 +39,7 @@ const blogPosts = [
     id: 4,
     title: 'The Future of Digital Casting: Trends to Watch',
     excerpt: 'Explore the emerging trends shaping the future of digital casting and talent management.',
-    image: '/blog/digital-casting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Industry Insights',
     date: 'March 8, 2024',
     slug: 'digital-casting-trends'
@@ -48,7 +48,7 @@ const blogPosts = [
     id: 5,
     title: 'How to Prepare for Your First Casting Call',
     excerpt: 'Essential tips and tricks to help you nail your first casting call and make a lasting impression.',
-    image: '/blog/first-casting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Career Tips',
     date: 'March 5, 2024',
     slug: 'first-casting-preparation'
@@ -57,7 +57,7 @@ const blogPosts = [
     id: 6,
     title: 'The Rise of Virtual Auditions',
     excerpt: 'How technology is transforming the audition process and what it means for talents and producers.',
-    image: '/blog/virtual-auditions.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Industry Insights',
     date: 'March 3, 2024',
     slug: 'virtual-auditions'
@@ -66,7 +66,7 @@ const blogPosts = [
     id: 7,
     title: 'Building Your Professional Portfolio',
     excerpt: 'A step-by-step guide to creating a compelling portfolio that gets you noticed by casting directors.',
-    image: '/blog/portfolio-guide.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'March 1, 2024',
     slug: 'portfolio-building'
@@ -75,7 +75,7 @@ const blogPosts = [
     id: 8,
     title: 'Success Story: From Extra to Lead Role',
     excerpt: 'An inspiring journey of persistence and growth in the entertainment industry.',
-    image: '/blog/success-story.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Case Study',
     date: 'February 28, 2024',
     slug: 'extra-to-lead'
@@ -84,7 +84,7 @@ const blogPosts = [
     id: 9,
     title: 'Understanding Acting Techniques',
     excerpt: 'A deep dive into various acting methods and how to apply them in your performances.',
-    image: '/blog/acting-techniques.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'February 25, 2024',
     slug: 'acting-techniques'
@@ -93,7 +93,7 @@ const blogPosts = [
     id: 10,
     title: 'Networking in the Entertainment Industry',
     excerpt: 'How to build and maintain professional relationships that advance your career.',
-    image: '/blog/networking.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Career Tips',
     date: 'February 22, 2024',
     slug: 'networking-tips'
@@ -102,7 +102,7 @@ const blogPosts = [
     id: 11,
     title: 'The Impact of AI on Casting',
     excerpt: 'Exploring how artificial intelligence is changing the casting landscape.',
-    image: '/blog/ai-casting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Industry Insights',
     date: 'February 20, 2024',
     slug: 'ai-impact'
@@ -111,7 +111,7 @@ const blogPosts = [
     id: 12,
     title: 'Mastering Self-Tape Auditions',
     excerpt: 'Technical and performance tips for creating professional self-tape auditions.',
-    image: '/blog/self-tape.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'February 18, 2024',
     slug: 'self-tape-mastery'
@@ -120,7 +120,7 @@ const blogPosts = [
     id: 13,
     title: 'International Casting Opportunities',
     excerpt: 'How to find and apply for casting calls worldwide using Selfcast.',
-    image: '/blog/international.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Career Tips',
     date: 'February 15, 2024',
     slug: 'international-opportunities'
@@ -129,7 +129,7 @@ const blogPosts = [
     id: 14,
     title: 'The Evolution of Commercial Casting',
     excerpt: 'How commercial casting has changed and what it means for modern actors.',
-    image: '/blog/commercial-casting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Industry Insights',
     date: 'February 12, 2024',
     slug: 'commercial-evolution'
@@ -138,7 +138,7 @@ const blogPosts = [
     id: 15,
     title: 'Success Story: Revolutionizing Theater Casting',
     excerpt: 'How a major theater company streamlined their casting process with Selfcast.',
-    image: '/blog/theater-casting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Case Study',
     date: 'February 10, 2024',
     slug: 'theater-revolution'
@@ -147,7 +147,7 @@ const blogPosts = [
     id: 16,
     title: 'Managing Your Online Presence',
     excerpt: 'Tips for maintaining a professional social media presence as a performer.',
-    image: '/blog/online-presence.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'February 8, 2024',
     slug: 'online-presence'
@@ -156,7 +156,7 @@ const blogPosts = [
     id: 17,
     title: 'Understanding Casting Contracts',
     excerpt: 'A comprehensive guide to reading and understanding casting contracts.',
-    image: '/blog/contracts.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Guide',
     date: 'February 5, 2024',
     slug: 'contract-guide'
@@ -165,7 +165,7 @@ const blogPosts = [
     id: 18,
     title: 'The Future of Reality TV Casting',
     excerpt: 'Trends and predictions for reality TV casting in the coming years.',
-    image: '/blog/reality-tv.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Industry Insights',
     date: 'February 3, 2024',
     slug: 'reality-tv-future'
@@ -174,7 +174,7 @@ const blogPosts = [
     id: 19,
     title: 'Breaking Into Voice Acting',
     excerpt: 'Everything you need to know about starting a career in voice acting.',
-    image: '/blog/voice-acting.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Career Tips',
     date: 'February 2, 2024',
     slug: 'voice-acting-guide'
@@ -183,7 +183,7 @@ const blogPosts = [
     id: 20,
     title: 'Building a Successful Career in the Entertainment Industry',
     excerpt: 'Expert tips and strategies for developing a thriving career in entertainment.',
-    image: '/blog/career-success.jpg',
+    image: '/pedroquintela.jpg',
     category: 'Career Tips',
     date: 'February 1, 2024',
     slug: 'career-success'
@@ -309,4 +309,4 @@ export default function BlogPage() {
       </div>
     </div>
   )
-} 
+}

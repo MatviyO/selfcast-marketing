@@ -27,7 +27,6 @@
 .hero p {
   font-size: 1.25rem;
   color: #666;
-  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -72,7 +71,7 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -230,4 +229,20 @@
   .section {
     margin-bottom: 4rem;
   }
-} 
+}
+
+.appStoreButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fadeIn 0.8s ease-out 0.4s both;
+  justify-content: center;
+}
+
+.appStoreButtons a {
+  transition: transform 0.3s ease;
+}
+
+.appStoreButtons a:hover {
+  transform: translateY(-2px);
+}

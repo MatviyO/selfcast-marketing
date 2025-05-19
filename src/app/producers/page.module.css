@@ -34,7 +34,7 @@
 .hero p {
   font-size: 1.25rem;
   color: #666;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 1.5rem;
   line-height: 1.6;
 }
@@ -79,7 +79,7 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -200,4 +200,4 @@
   .benefitCard {
     padding: 2rem;
   }
-} 
+}

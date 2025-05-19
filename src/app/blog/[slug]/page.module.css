@@ -61,7 +61,7 @@
 }
 
 .featuredImage {
-    margin: -4rem auto 3rem;
+    margin: 1rem auto 3rem;
     max-width: var(--container-max-width);
     padding: 0 var(--container-padding);
     position: relative;
@@ -75,7 +75,7 @@
 }
 
 .content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 0 4rem;
     font-size: 1.125rem;
@@ -176,7 +176,7 @@
 }
 
 .navigation {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 0 4rem;
 }
@@ -260,4 +260,4 @@
     .category, .readTime {
         display: inline-block;
     }
-} 
+}

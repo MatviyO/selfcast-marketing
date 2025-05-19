@@ -13,7 +13,7 @@ export default function Contact() {
         <div className={styles.contactInfo}>
           <h2>Get in Touch</h2>
           <p>We'd love to hear from you. Please use our contact information below or send us an email.</p>
-          
+
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>
               <FaEnvelope className={styles.icon} />
@@ -43,17 +43,17 @@ export default function Contact() {
           <div className={styles.socialLinks}>
             <h3>Follow Us</h3>
             <div className={styles.socialGrid}>
-              <a href="https://linkedin.com/company/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <a href="https://www.linkedin.com/company/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                 LinkedIn
               </a>
-              <a href="https://instagram.com/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <a href="https://www.instagram.com/selfcastapp" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                 Instagram
               </a>
-              <a href="https://facebook.com/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <a href="https://www.facebook.com/selfcastApp" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                 Facebook
               </a>
-              <a href="https://twitter.com/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                Twitter
+              <a href="https://www.youtube.com/selfcast" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                Youtube
               </a>
             </div>
           </div>
@@ -76,4 +76,4 @@ export default function Contact() {
       </div>
     </div>
   );
-} 
+}

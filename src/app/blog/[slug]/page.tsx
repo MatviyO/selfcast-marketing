@@ -11,7 +11,7 @@ const blogPost = {
     date: "March 15, 2024",
     category: "Case Study",
     readTime: "5 min read",
-    image: "/blog/streamlined-processes.jpg",
+    image: "/pedroquintela.jpg",
     content: `
         <p>In today's digital age, safeguarding processes have become increasingly important for organizations working with talents and performers. OneRen, a leading performing arts organization, faced challenges in managing their safeguarding procedures efficiently while maintaining the highest standards of security and privacy.</p>
 
@@ -89,7 +89,7 @@ export default function BlogPost() {
 
             <div className={styles.container}>
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: blogPost.content }} />
-                
+
                 <div className={styles.share}>
                     <span className={styles.shareLabel}>
                         <FaShare /> Share this article
@@ -98,10 +98,10 @@ export default function BlogPost() {
                         <a href={`https://twitter.com/intent/tweet?text=${blogPost.title}`} target="_blank" rel="noopener noreferrer">
                             <FaTwitter />
                         </a>
-                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://www.facebook.com/sharer/sharer.php`} target="_blank" rel="noopener noreferrer">
                             <FaFacebook />
                         </a>
-                        <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${blogPost.title}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://www.linkedin.com/shareArticle`} target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
                         </a>
                     </div>
@@ -115,4 +115,4 @@ export default function BlogPost() {
             </div>
         </article>
     )
-} 
+}

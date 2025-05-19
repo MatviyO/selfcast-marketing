@@ -45,6 +45,13 @@
   animation: slideUp 0.8s ease-out;
 }
 
+.description {
+  padding-top: 60px;
+}
+.apple {
+  margin-left: -10px;
+}
+
 .heroContent h1 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -208,7 +215,7 @@
   }
 
   .appStoreButtons img {
-    max-width: 130px;
+    max-width: 220px;
     height: auto;
   }
 
@@ -242,7 +249,7 @@
   }
 
   .appStoreButtons img {
-    max-width: 110px;
+    max-width: 160px;
   }
 
   .heroImage img {
@@ -728,11 +735,9 @@
 
 .clientLogos img {
   transition: all 0.3s ease;
-  filter: grayscale(100%) opacity(60%);
 }
 
 .clientLogos img:hover {
-  filter: grayscale(0%) opacity(100%);
   transform: scale(1.05);
 }
 
@@ -988,6 +993,24 @@
   height: auto;
   display: block;
   transition: transform 0.6s ease;
+}
+
+.featureImage1 {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInRight 0.8s ease-out 0.5s forwards;
+  margin: auto;
+}
+
+.featureImage1 img {
+  height: auto;
+  width: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.featureImage1:hover img {
+  transform: scale(1.05);
 }
 
 .featureImage:hover img {
@@ -1310,23 +1333,4 @@
 
 .appStoreButtons a:hover {
     transform: translateY(-2px);
-}
-
-.appStoreButtons img {
-    height: auto;
-    width: auto;
-    max-width: 140px;
-}
-
-@media (max-width: 768px) {
-    .appStoreButtons {
-        justify-content: center;
-        margin: 1rem auto;
-        max-width: 280px;
-    }
-
-    .appStoreButtons img {
-        max-width: 130px;
-        height: auto;
-    }
 }

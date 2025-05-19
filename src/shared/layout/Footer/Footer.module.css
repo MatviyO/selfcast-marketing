@@ -135,6 +135,12 @@
     transform: translateY(-2px);
 }
 
+.downloadAppText {
+    margin-top: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
 @media (max-width: 1200px) {
     .footerColumns {
         grid-template-columns: repeat(3, 1fr);
