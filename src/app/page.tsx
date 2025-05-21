@@ -166,7 +166,7 @@ export default function Home() {
                 <li>🎬 Apply for Real Roles
                   Browse castings in film, TV, commercials, and more – and apply with one tap.</li>
                 <li>📱 Manage Everything from the App
-                  Track your applications, update your profile, and get alerts when you're selected.</li>
+                  Track your applications, update your profile, and get alerts when you&apos;re selected.</li>
                 <li>🌍 Get Discovered Worldwide
                   Be seen by producers across 150+ countries – no agents or agencies required.</li>
               </ul>
