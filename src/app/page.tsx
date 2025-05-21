@@ -156,17 +156,19 @@ export default function Home() {
         <div className={styles.container}>
           <div className={`${styles.featureContent} ${styles.imageRight}`}>
             <div className={styles.featureText}>
-              <h2>Streamlined Talent Management</h2>
+              <h2>Build Your Career with Selfcast</h2>
               <p>
-                Take control of your talent pool with our comprehensive management system.
-                Organize profiles, schedule auditions, and communicate seamlessly with your
-                team and talents.
+                Take control of your casting journey. Create your profile, apply for roles, and get booked — all from one app.
               </p>
               <ul className={styles.featureList}>
-                <li>Centralized talent database</li>
-                <li>Automated scheduling tools</li>
-                <li>Integrated messaging system</li>
-                <li>Performance analytics</li>
+                <li>📸 Create a Standout Profile
+                  Upload your best photos, videos, and experience to get noticed.</li>
+                <li>🎬 Apply for Real Roles
+                  Browse castings in film, TV, commercials, and more – and apply with one tap.</li>
+                <li>📱 Manage Everything from the App
+                  Track your applications, update your profile, and get alerts when you're selected.</li>
+                <li>🌍 Get Discovered Worldwide
+                  Be seen by producers across 150+ countries – no agents or agencies required.</li>
               </ul>
               <Link href="/talents" className={styles.learnMore}>
                 Learn More
