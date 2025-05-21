@@ -144,7 +144,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #e00;
+    background: #D00115;
 }
 
 .section strong {
@@ -154,7 +154,7 @@
 }
 
 .link {
-    color: #e00;
+    color: #D00115;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.2s ease;

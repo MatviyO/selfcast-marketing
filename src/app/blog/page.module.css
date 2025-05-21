@@ -57,7 +57,7 @@
 
 .searchInput:focus {
   outline: none;
-  border-color: #e00;
+  border-color: #D00115;
   box-shadow: 0 0 0 3px rgba(238, 0, 0, 0.1);
 }
 
@@ -81,12 +81,12 @@
 }
 
 .tag:hover {
-  background: #e00;
+  background: #D00115;
   color: white;
 }
 
 .tag.active {
-  background: #e00;
+  background: #D00115;
   color: white;
 }
 
@@ -148,7 +148,7 @@
 .readMore {
   display: inline-flex;
   align-items: center;
-  color: #e00;
+  color: #D00115;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -177,7 +177,7 @@
 
 .pageButton:hover,
 .pageButton.active {
-  background: #e00;
+  background: #D00115;
   color: white;
 }
 
@@ -230,4 +230,4 @@
   .blogContent {
     padding: 1.5rem;
   }
-} 
+}

@@ -9,7 +9,7 @@
 }
 
 .hero {
-    background: linear-gradient(to bottom, #e00, #cc0000);
+    background: linear-gradient(to bottom, #D00115, #cc0000);
     color: white;
     padding: 4rem 0;
     margin-bottom: 2rem;
@@ -120,7 +120,7 @@
     top: -1rem;
     left: 2rem;
     font-size: 5rem;
-    color: #e00;
+    color: #D00115;
     opacity: 0.1;
     font-family: serif;
 }
@@ -170,7 +170,7 @@
 }
 
 .socialLinks a:hover {
-    background: #e00;
+    background: #D00115;
     color: white;
     transform: translateY(-2px);
 }
@@ -191,7 +191,7 @@
 }
 
 .backLink:hover {
-    color: #e00;
+    color: #D00115;
 }
 
 @media (max-width: 1024px) {

@@ -76,7 +76,7 @@
 .faqCard h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #e00;
+  color: #D00115;
   margin-bottom: 1rem;
 }
 
@@ -118,7 +118,7 @@
 .contactButton {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #e00;
+  background: #D00115;
   color: white;
   border-radius: var(--radius-full);
   text-decoration: none;
@@ -167,4 +167,4 @@
   .contact {
     padding: 2rem 1.5rem;
   }
-} 
+}

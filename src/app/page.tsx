@@ -9,16 +9,17 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1>CASTING MADE EASY</h1>
+            <h1>Get Discovered. Get Booked.  </h1>
+            <h3>CASTING MADE EASY</h3>
             <div className={styles.buttons}>
               <Link href="/talents">
-                <button className={styles.primary}>For Talents</button>
+                <button className={styles.primary}>I’m a Talent</button>
               </Link>
               <Link href="/producers">
-                <button className={styles.primary}>For Producers</button>
+                <button className={styles.primary}>I’m a Producer</button>
               </Link>
             </div>
-            <h5 className={styles.description}>Download the app today</h5>
+            <h5 className={styles.description}>For Talents – Download the App to get started</h5>
             <div className={styles.appStoreButtons}>
               <a className={styles.apple} href="https://apps.apple.com/us/app/selfcast/id1467179570?ignmpt=uo%3D4" target="_blank" rel="noopener noreferrer">
                 <Image
@@ -52,29 +53,39 @@ export default function Home() {
       </section>
 
       <section className={styles.stats}>
+        <div className={styles.blogHeader}>
+          <h5>Join Selfcast users worldwide booking real jobs in film, TV, and commercials.</h5>
+        </div>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
-              <FaCloudDownloadAlt />
+              🎬
             </div>
-            <div className={styles.statNumber}>+90K</div>
+            <div className={styles.statNumber}>🎬90,000+</div>
             <div className={styles.statLabel}>Downloads</div>
           </div>
 
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
-              <FaExchangeAlt />
+              🎭
             </div>
-            <div className={styles.statNumber}>+20K</div>
+            <div className={styles.statNumber}>20,000+</div>
             <div className={styles.statLabel}>Castings</div>
           </div>
 
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
-              <FaStarIcon />
+              🤝
             </div>
-            <div className={styles.statNumber}>+2K</div>
+            <div className={styles.statNumber}>2,000+</div>
             <div className={styles.statLabel}>Producers</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statIcon}>
+              🌍
+            </div>
+            <div className={styles.statNumber}>150+</div>
+            <div className={styles.statLabel}>Countries</div>
           </div>
         </div>
       </section>
@@ -178,8 +189,8 @@ export default function Home() {
 
       <section className={styles.testimonials}>
         <div className={styles.testimonialHeader}>
-          <h2>What people say about us?</h2>
-          <p>Hear from our satisfied customers</p>
+          <h2 className={styles.textWhite}>What people say about us?</h2>
+          <p className={styles.textWhite}>Hear from our satisfied customers</p>
         </div>
         <div className={styles.testimonialGrid}>
           <div className={styles.testimonialCard}>
@@ -260,40 +271,6 @@ export default function Home() {
                 <h4>Michael Chen</h4>
                 <p>From Copenhagen K, Denmark</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Feature Section - Image Left */}
-      <section className={styles.featureSection}>
-        <div className={styles.container}>
-          <div className={styles.featureContent}>
-            <div className={styles.featureImage1}>
-              <Image
-                  src="/home/phone.png"
-                  alt="Modern Casting Platform"
-                  width={600}
-                  height={450}
-                  quality={95}
-                  priority
-              />
-            </div>
-            <div className={styles.featureText}>
-              <h2>Modern Casting Platform</h2>
-              <p>
-                Transform your casting workflow with our intuitive platform. From talent
-                discovery to final selection, manage everything in one place with our
-                advanced tools and analytics.
-              </p>
-              <ul className={styles.featureList}>
-                <li>Advanced talent search and filtering</li>
-                <li>Real-time communication tools</li>
-                <li>Digital portfolio management</li>
-                <li>Smart scheduling system</li>
-              </ul>
-              <Link href="/talents" className={styles.learnMore}>
-                Explore Features
-              </Link>
             </div>
           </div>
         </div>
