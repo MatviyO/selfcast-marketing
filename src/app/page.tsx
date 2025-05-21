@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
-import { FaStar, FaCloudDownloadAlt, FaExchangeAlt, FaStar as FaStarIcon } from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
 
 export default function Home() {
   return (
