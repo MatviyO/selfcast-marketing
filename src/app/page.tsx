@@ -4,6 +4,16 @@ import Link from 'next/link'
 import { FaStar } from 'react-icons/fa'
 
 export default function Home() {
+  const startDate = new Date('2025-07-01')
+  const now = new Date()
+  const daysSinceStart = Math.floor((now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
+
+  const downloads = 90000 + daysSinceStart * 100
+  const castings = 70000 + daysSinceStart * 20
+  const producers = 500 + Math.floor((daysSinceStart * 10) / 7)
+
+  const formatStat = (value: number) => value.toLocaleString('en-US')
+
   return (
     <>
       <section className={styles.hero}>
@@ -61,96 +71,35 @@ export default function Home() {
             <div className={styles.statIcon}>
               🎬
             </div>
-            <div className={styles.statNumber}>🎬90,000+</div>
-            <div className={styles.statLabel}>Downloads</div>
+            <div className={styles.statNumber}>{formatStat(downloads)}+</div>
+            <div className={styles.statLabel}>All-time downloads</div>
           </div>
 
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               🎭
             </div>
-            <div className={styles.statNumber}>20,000+</div>
-            <div className={styles.statLabel}>Castings</div>
+            <div className={styles.statNumber}>{formatStat(castings)}+</div>
+            <div className={styles.statLabel}>Roles posted</div>
           </div>
 
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               🤝
             </div>
-            <div className={styles.statNumber}>2,000+</div>
-            <div className={styles.statLabel}>Producers</div>
+            <div className={styles.statNumber}>{formatStat(producers)}+</div>
+            <div className={styles.statLabel}>Verified producers</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               🌍
             </div>
-            <div className={styles.statNumber}>150+</div>
-            <div className={styles.statLabel}>Countries</div>
+            <div className={styles.statNumber}>157+</div>
+            <div className={styles.statLabel}>Countries with users</div>
           </div>
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section className={styles.blogSection}>
-        <div className={styles.blogHeader}>
-          <h2>Caring is the new marketing</h2>
-          <p>
-            The Selfcast blog is the best place to read about the latest casting insights,
-            trends and more. See who&apos;s joining the community, read about how our community
-            are increasing their casting success and lot&apos;s more.
-          </p>
-        </div>
-
-        <div className={styles.blogGrid}>
-          <article className={styles.blogCard}>
-            <Image
-                src="/pedroquintela.jpg"
-                alt="Person using laptop"
-                width={400}
-                height={200}
-                className={styles.blogImage}
-            />
-            <div className={styles.blogContent}>
-              <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
-              <Link href="/blog/streamlined-processes" className={styles.readMore}>
-                Read more →
-              </Link>
-            </div>
-          </article>
-
-          <article className={styles.blogCard}>
-            <Image
-                src="/pedroquintela.jpg"
-                alt="Laptop with analytics"
-                width={400}
-                height={200}
-                className={styles.blogImage}
-            />
-            <div className={styles.blogContent}>
-              <h3>What are your safeguarding responsibilities and how can you manage them?</h3>
-              <Link href="/blog/safeguarding-responsibilities" className={styles.readMore}>
-                Read more →
-              </Link>
-            </div>
-          </article>
-
-          <article className={styles.blogCard}>
-            <Image
-                src="/pedroquintela.jpg"
-                alt="Person working on laptop"
-                width={400}
-                height={200}
-                className={styles.blogImage}
-            />
-            <div className={styles.blogContent}>
-              <h3>Revamping the Membership Model with Triathlon Australia</h3>
-              <Link href="/blog/membership-model" className={styles.readMore}>
-                Read more →
-              </Link>
-            </div>
-          </article>
-        </div>
-      </section>
       {/* Feature Section - Image Right */}
       <section className={styles.featureSection}>
         <div className={styles.container}>
