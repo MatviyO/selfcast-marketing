@@ -2,6 +2,8 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { FaStar } from 'react-icons/fa'
+import { getTodaysTestimonials } from '@/shared/utils/testimonials'
+import { CLIENTS } from '@/shared/utils/clients'
 
 export default function Home() {
   const startDate = new Date('2025-07-01')
@@ -13,6 +15,7 @@ export default function Home() {
   const producers = 500 + Math.floor((daysSinceStart * 10) / 7)
 
   const formatStat = (value: number) => value.toLocaleString('en-US')
+  const todaysTestimonials = getTodaysTestimonials(3)
 
   return (
     <>
@@ -100,11 +103,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Section - Image Right */}
+      {/* Feature Section - Split: For Talents (Left) & For Producers (Right) */}
       <section className={styles.featureSection}>
         <div className={styles.container}>
-          <div className={`${styles.featureContent} ${styles.imageRight}`}>
+          <div className={styles.splitFeatureContent}>
+            {/* For Talents - Left Side */}
             <div className={styles.featureText}>
+              <span className={styles.sectionLabel}>For Talents</span>
               <h2>Build Your Career with Selfcast</h2>
               <p>
                 Take control of your casting journey. Create your profile, apply for roles, and get booked — all from one app.
@@ -123,15 +128,27 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-            <div className={styles.featureImage}>
-              <Image
-                  src="/home/Baggrund.png"
-                  alt="Talent Management System"
-                  width={600}
-                  height={450}
-                  quality={95}
-                  priority
-              />
+
+            {/* For Producers - Right Side */}
+            <div className={styles.featureText}>
+              <span className={styles.sectionLabel}>For Producers</span>
+              <h2>Casting Made Easy</h2>
+              <p className={styles.producerSubheadline}>
+                Built by real casters – trusted by top producers.
+              </p>
+              <p>
+                Book talents in minutes. No agents. No waiting.
+              </p>
+              <ul className={styles.featureList}>
+                <li>Create roles, notify selected talents, get replies instantly.</li>
+                <li>Book the right talents in just minutes.</li>
+              </ul>
+              <p className={styles.producerQuestion}>
+                Want full control over your casting process?
+              </p>
+              <Link href="/producers" className={styles.learnMore}>
+                Learn how Selfcast works →
+              </Link>
             </div>
           </div>
         </div>
@@ -140,90 +157,43 @@ export default function Home() {
 
       <section className={styles.testimonials}>
         <div className={styles.testimonialHeader}>
-          <h2 className={styles.textWhite}>What people say about us?</h2>
-          <p className={styles.textWhite}>Hear from our satisfied customers</p>
+          <h2 className={styles.textWhite}>Hear from our satisfied customers</h2>
+          <p className={styles.textWhite}>Trusted by over 60,000+ talents worldwide</p>
         </div>
         <div className={styles.testimonialGrid}>
-          <div className={styles.testimonialCard}>
-            <div className={styles.rating}>5.0</div>
-            <div className={styles.stars}>
-              {[...Array(5)].map((_, i) => (
-                <FaStar key={i} />
-              ))}
-            </div>
-            <p className={styles.testimonialText}>
-              I feel very secure when using your services. Your customer care team is very enthusiastic and the driver is always on time.
-            </p>
-            <div className={styles.testimonialAuthor}>
-              <div className={styles.authorImage}>
-                <Image
-                  src="/testimonials/mike.jpg"
-                  alt="Charlie Johnson"
-                  width={48}
-                  height={48}
-                  style={{ objectFit: 'cover' }}
-                />
+          {todaysTestimonials.map((testimonial) => (
+            <div key={testimonial.id} className={styles.testimonialCard}>
+              <div className={styles.rating}>{testimonial.rating}.0</div>
+              <div className={styles.stars}>
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} />
+                ))}
               </div>
-              <div className={styles.authorInfo}>
-                <h4>Charlie Johnson</h4>
-                <p>From New York, US</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.testimonialCard}>
-            <div className={styles.rating}>5.0</div>
-            <div className={styles.stars}>
-              {[...Array(5)].map((_, i) => (
-                <FaStar key={i} />
-              ))}
-            </div>
-            <p className={styles.testimonialText}>
-              The platform is incredibly user-friendly and has helped me land several great roles. The team is always responsive and helpful.
-            </p>
-            <div className={styles.testimonialAuthor}>
-              <div className={styles.authorImage}>
-                <Image
-                  src="/testimonials/sarah.jpg"
-                  alt="Sarah Wilson"
-                  width={48}
-                  height={48}
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-              <div className={styles.authorInfo}>
-                <h4>Sarah Wilson</h4>
-                <p>From Copenhagen K, Denmark</p>
+              {testimonial.source === 'trustpilot' && (
+                <div className={styles.trustpilotBadge}>
+                  <span>Trustpilot</span>
+                </div>
+              )}
+              <p className={styles.testimonialText}>
+                {testimonial.text}
+              </p>
+              <div className={styles.testimonialAuthor}>
+                <div className={styles.authorImage}>
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.author}
+                    width={48}
+                    height={48}
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                <div className={styles.authorInfo}>
+                  <h4>{testimonial.author}</h4>
+                  <p>From {testimonial.location}</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className={styles.testimonialCard}>
-            <div className={styles.rating}>5.0</div>
-            <div className={styles.stars}>
-              {[...Array(5)].map((_, i) => (
-                <FaStar key={i} />
-              ))}
-            </div>
-            <p className={styles.testimonialText}>
-              As a producer, finding the right talent has never been easier. The filtering system and profile verification make the process seamless.
-            </p>
-            <div className={styles.testimonialAuthor}>
-              <div className={styles.authorImage}>
-                <Image
-                  src="/testimonials/michael.jpg"
-                  alt="Michael Chen"
-                  width={48}
-                  height={48}
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-              <div className={styles.authorInfo}>
-                <h4>Michael Chen</h4>
-                <p>From Copenhagen K, Denmark</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 

@@ -79,9 +79,6 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .benefitsGrid {
@@ -89,6 +86,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  max-width: 100%;
 }
 
 .benefitCard {
