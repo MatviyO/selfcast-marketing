@@ -3,7 +3,6 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import { FaStar } from 'react-icons/fa'
 import { getTodaysTestimonials } from '@/shared/utils/testimonials'
-import { CLIENTS } from '@/shared/utils/clients'
 
 export default function Home() {
   const startDate = new Date('2025-07-01')
