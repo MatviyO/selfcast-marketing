@@ -18,35 +18,36 @@ export default function Home() {
 
   return (
     <>
+
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
             <h1>Get Discovered. Get Booked.  </h1>
-            <h3>CASTING MADE EASY</h3>
+            <h2>CASTING MADE EASY</h2>
             <div className={styles.buttons}>
-              <Link href="/talents">
-                <button className={styles.primary}>I’m a Talent</button>
+              <Link href="/talents" className={styles.primary}>
+                I’m a Talent
               </Link>
-              <Link href="/producers">
-                <button className={styles.primary}>I’m a Producer</button>
+              <Link href="/producers" className={styles.primary}>
+                I’m a Producer
               </Link>
             </div>
-            <h5 className={styles.description}>For Talents – Download the App to get started</h5>
+            <p className={styles.description}>For Talents – Download the App to get started</p>
             <div className={styles.appStoreButtons}>
-              <a className={styles.apple} href="https://apps.apple.com/us/app/selfcast/id1467179570?ignmpt=uo%3D4" target="_blank" rel="noopener noreferrer">
+              <a className={styles.apple} href="https://apps.apple.com/us/app/selfcast/id1467179570?ignmpt=uo%3D4" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                 <Image
-                    src="/apple.svg"
-                    alt="Download on the App Store"
-                    width={140}
-                    height={42}
+                  src="/apple.svg"
+                  alt="Download on the App Store"
+                  width={140}
+                  height={42}
                 />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.selfcast" target="_blank" rel="noopener noreferrer">
+              <a href="https://play.google.com/store/apps/details?id=com.selfcast" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
                 <Image
-                    src="/google.svg"
-                    alt="Get it on Google Play"
-                    width={140}
-                    height={42}
+                  src="/google.svg"
+                  alt="Get it on Google Play"
+                  width={140}
+                  height={42}
                 />
               </a>
             </div>
@@ -66,11 +67,11 @@ export default function Home() {
 
       <section className={styles.stats}>
         <div className={styles.blogHeader}>
-          <h5>Join Selfcast users worldwide booking real jobs in film, TV, and commercials.</h5>
+          <h2>Join Selfcast users worldwide booking real jobs in film, TV, and commercials.</h2>
         </div>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>
+            <div className={styles.statIcon} aria-hidden="true">
               🎬
             </div>
             <div className={styles.statNumber}>{formatStat(downloads)}+</div>
@@ -78,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>
+            <div className={styles.statIcon} aria-hidden="true">
               🎭
             </div>
             <div className={styles.statNumber}>{formatStat(castings)}+</div>
@@ -86,14 +87,14 @@ export default function Home() {
           </div>
 
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>
+            <div className={styles.statIcon} aria-hidden="true">
               🤝
             </div>
             <div className={styles.statNumber}>{formatStat(producers)}+</div>
             <div className={styles.statLabel}>Verified producers</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>
+            <div className={styles.statIcon} aria-hidden="true">
               🌍
             </div>
             <div className={styles.statNumber}>157+</div>
@@ -204,10 +205,11 @@ export default function Home() {
             <p>We have been working with major production companies and studios worldwide</p>
           </div>
           <div className={styles.clientLogos}>
-            <Image width={1300} height={600} src="/home/partners.png" alt="Client Logo"/>
+            <Image width={1300} height={600} src="/home/partners.png" alt="Logos of our partner production companies" />
           </div>
         </div>
       </section>
     </>
+
   )
 }
