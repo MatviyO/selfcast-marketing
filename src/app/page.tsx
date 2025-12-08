@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className={styles.stats}>
         <div className={styles.blogHeader}>
-          <h2>Join Selfcast users worldwide booking real jobs in film, TV, and commercials.</h2>
+          <h3>Join Selfcast users worldwide booking real jobs in film, TV, and commercials</h3>
         </div>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>

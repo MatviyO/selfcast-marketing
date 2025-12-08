@@ -282,6 +282,23 @@
   color: #fff !important;
 }
 
+.blogHeader {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto 3rem;
+  padding: 0 var(--container-padding);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.blogHeader h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .testimonialHeader {
   text-align: center;
   margin-bottom: 3rem;
@@ -788,6 +805,9 @@
   background: rgba(208, 1, 21, 0.1);
   border-radius: 0.25rem;
 }
+
+
+
 
 /* Split Feature Content */
 .splitFeatureContent {
