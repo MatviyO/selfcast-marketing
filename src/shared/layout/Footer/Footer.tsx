@@ -57,16 +57,16 @@ export default function Footer() {
 
                     <div className={styles.footerRight}>
                         <div className={styles.socialLinks}>
-                            <a href="https://www.facebook.com/selfcastApp" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/selfcastApp" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
                                 <FaFacebook />
                             </a>
-                            <a href="https://www.youtube.com/selfcast" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/selfcast" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel">
                                 <FaYoutube />
                             </a>
-                            <a href="https://www.instagram.com/selfcastapp" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/selfcastapp" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile">
                                 <FaInstagram />
                             </a>
-                            <a href="https://www.linkedin.com/company/selfcast" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/selfcast" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
                                 <FaLinkedin />
                             </a>
                         </div>

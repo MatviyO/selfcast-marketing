@@ -124,7 +124,7 @@ export default function Home() {
                 <li>🌍 Get Discovered Worldwide
                   Be seen by producers across 150+ countries – no agents or agencies required.</li>
               </ul>
-              <Link href="/talents" className={styles.learnMore}>
+              <Link href="/talents" className={styles.learnMore} aria-label="Learn more about Selfcast for talents">
                 Learn More
               </Link>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.authorInfo}>
-                  <h4>{testimonial.author}</h4>
+                  <h3>{testimonial.author}</h3>
                   <p>From {testimonial.location}</p>
                 </div>
               </div>
@@ -205,11 +205,43 @@ export default function Home() {
             <p>We have been working with major production companies and studios worldwide</p>
           </div>
           <div className={styles.clientLogos}>
-            <Image width={1300} height={600} src="/home/partners.png" alt="Logos of our partner production companies" />
+            <Image
+              width={1920}
+              height={942}
+              src="/home/partners.png"
+              alt="Logos of our partner production companies"
+              style={{ width: '100%', height: 'auto' }}
+            />
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Selfcast',
+            applicationCategory: 'EntertainmentApplication',
+            operatingSystem: 'iOS, Android',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '60000',
+            },
+            author: {
+              '@type': 'Organization',
+              name: 'Selfcast',
+              url: 'https://selfcast.com',
+            },
+          }),
+        }}
+      />
     </>
-
   )
 }

@@ -25,7 +25,7 @@ export default function Header() {
                     className={styles.toggle}
                     checked={isMenuOpen}
                     onChange={(e) => setIsMenuOpen(e.target.checked)}
-                    aria-hidden="true"
+                    aria-label="Toggle navigation menu"
                 />
 
                 <label htmlFor="menuToggle" className={styles.burger}>
