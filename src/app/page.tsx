@@ -124,8 +124,8 @@ export default function Home() {
                 <li>🌍 Get Discovered Worldwide
                   Be seen by producers across 150+ countries – no agents or agencies required.</li>
               </ul>
-              <Link href="/talents" className={styles.learnMore} aria-label="Learn more about Selfcast for talents">
-                Learn More
+              <Link href="/talents" className={styles.learnMore}>
+                Learn more for Talents
               </Link>
             </div>
 
